@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "cypress": "^9.4.1",
+    "cypress-social-logins": "^1.13.0",
     "typescript": "^4.5.5"
   },
   "dependencies": {

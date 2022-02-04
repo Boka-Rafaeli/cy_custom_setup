@@ -1,4 +1,10 @@
 {
+  "env": {
+    "username": "",
+    "password": "",
+    "loginUrl": "https://www.facebook.com/",
+    "cookieName": ""
+  },
   "projectId": "",
   "video": true,
   "followRedirect": true,

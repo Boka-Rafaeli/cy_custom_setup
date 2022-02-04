@@ -2,7 +2,14 @@
 
 /// <reference types="cypress" />
 
+// GoogleSocialLogin
+const { FacebookSocialLogin } = require('cypress-social-logins').plugins;
+
 module.exports = (on, config) => {
+  on('task', {
+    FacebookSocialLogin: FacebookSocialLogin,
+  });
+
   // @ts-ignore
   on('before:browser:launch', ({ family, name } = {}, launchOptions) => {
     console.log(launchOptions.args); // print all current args

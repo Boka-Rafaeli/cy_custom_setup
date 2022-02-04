@@ -1,0 +1,16 @@
+name: End-to-end tests
+on: [ push ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install a project and cypress with a clean slate
+        run: |
+          npm ci
+          $(npm bin)/cypress cache path
+          $(npm bin)/cypress cache list
+          $(npm bin)/cypress verify
+      - name: Run Cypress tests
+#        run: npm run -s cypress:chrome -- -e username=${{ secrets._EMAIL }},password=${{ secrets._PASS }}
+        continue-on-error: true

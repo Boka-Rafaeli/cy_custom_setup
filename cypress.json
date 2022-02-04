@@ -1,0 +1,19 @@
+{
+  "projectId": "",
+  "video": true,
+  "followRedirect": true,
+  "videoCompression": false,
+  "chromeWebSecurity": false,
+  "failOnNetworkError": false,
+  "watchForFileChanges": false,
+  "videoUploadOnPasses": false,
+  "trashAssetsBeforeRuns": true,
+  "screenshotOnRunFailure": true,
+  "defaultCommandTimeout": 10000,
+  "slowTestThreshold": 10000,
+  "numTestsKeptInMemory": 50,
+  "retries": {
+    "runMode": 2,
+    "openMode": 2
+  }
+}

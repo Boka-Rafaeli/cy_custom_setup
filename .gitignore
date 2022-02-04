@@ -1,0 +1,16 @@
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+cypress/videos
+cypress/screenshots
+cypress/downloads
+
+.vscode/*
+results/
+*.code-workspace
+.idea/*
+.DS_Store
+
+.yalc/*
+yalc.lock
+runner-results

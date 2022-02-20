@@ -2,7 +2,6 @@
   "env": {
     "username": "",
     "password": "",
-    "loginUrl": "https://www.facebook.com/",
     "cookieName": ""
   },
   "projectId": "",
@@ -17,7 +16,7 @@
   "screenshotOnRunFailure": true,
   "defaultCommandTimeout": 10000,
   "slowTestThreshold": 10000,
-  "numTestsKeptInMemory": 50,
+  "numTestsKeptInMemory": 0,
   "retries": {
     "runMode": 2,
     "openMode": 2

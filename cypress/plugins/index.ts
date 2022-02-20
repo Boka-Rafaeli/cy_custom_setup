@@ -16,6 +16,7 @@ module.exports = (on, config) => {
 
     if (family === 'chromium' && name !== 'electron') {
       // auto open devtools
+      launchOptions.args.push('--disable-dev-shm-usage');
       launchOptions.args.push('--auto-open-devtools-for-tabs');
     }
 
